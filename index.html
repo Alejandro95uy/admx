@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="icon" type="image/png" href="image/icono.png" />
+		<title> ADMX - Administrador Linux </title>
+
+	<!-- El icono y título de la página -->
+<style>
+	body {
+		        background-image: url (image/fondo.png);            
+		        background-size: 100%;
+		        background-origin: content;
+		        background-repeat: repeat;
+		     }
+</style>
+	<!-- Estilo del fondo -->
+	</head>
+
+<body background="image/fondo.jpg" >
+
+	<div align="center"> <p><a href="index.html"><img top src="image/encabezado.png" alt="Admx" width="950" height="170" /></a></p></div>
+
+	<!-- El encabezado -->
+
+		<p align="center" >
+			<a href="index.html"><img src="image/inicio.png" alt="Inicio" width="100" height="50" hspace="" /></a>
+			<a href="descargar.html"><img src="image/descargar.png" alt="Descargar" width="100" height="50" /></a>
+			<a href="informacion.html"><img src="image/informacion.png" alt="Informaci&#243;n" width="100" height="50"  /></a>
+			<a href="contactenos.html"><img src="image/contactenos.png" alt="Cont&#225;ctenos" width="100" height="50" /></a>
+		</p>
+
+	<!-- Los botones -->
+
+	
+<style>
+	table {  
+	border-radius: 34px 34px 34px 34px;
+	-moz-border-radius: 34px 34px 34px 34px;
+	-webkit-border-radius: 34px 34px 34px 34px;
+	border: 0px solid #707070; }
+</style>
+	<!-- Estilo de la tabla -->
+   <div align="center" > 
+    <table border="0" height="0" width="450" bgcolor="white" cellpadding="0" ><td> 
+    		<p align="center"> 
+				<font face="Arial" color="DimGray" size="6"> <u> <b> Capturas del programa </b> </u> </font>
+			</p>
+            
+            <!-- Título -->
+            
+		</td></table>
+        </div >
+        
+    <div align="right" > 
+		<table border=0 height="250" width="200"  cellpadding="0" >
+			<td align=center> 
+				<table border=0 height="200" width="550" bgcolor="black" cellpadding="25" ><td> 
+			
+	<script type="text/javascript">
+    
+    //Ancho (en pixeles)
+    
+    var sliderwidth="550px"
+    
+    //Alto
+    
+    var sliderheight="200px"
+    
+    //Velocidad 1-10
+    
+    var slidespeed=2
+    
+    //Color de fondo:
+    
+    slidebgcolor="#000000"
+    
+    
+    
+    //Vínculos y enlaces de las imágenes
+    
+    var leftrightslide=new Array()
+    
+    var finalslide=''
+    
+    leftrightslide[0]='<a href="index.html" target="blank" title="Logo del programa"><img border="0" src="capturas/logo.png" height="200"></a>'
+    
+    leftrightslide[1]='<a href="index.html" target="blank" title="Inicio de sesi&#243;n"><img border="0" src="capturas/iniciando sesion.png" height="200"></a>'
+    
+    leftrightslide[2]='<a href="index.html" target="blank" title="Men&#250; de administrador"><img border="0" src="capturas/menu administrador.png" height="200"></a>'
+
+    leftrightslide[3]='<a href="index.html" target="blank" title="Men&#250; usuario"><img border="0" src="capturas/menu usuario.png" height="200"></a>'
+    
+    leftrightslide[4]='<a href="index.html" target="blank" title="Cerrando sesi&#243;n"><img border="0" src="capturas/cerando sesion.png" height="200"></a>'
+    
+    leftrightslide[5]='<a href="index.html" target="blank" title="Cerrando software"><img border="0" src="capturas/cerando software.png" height="200"></a>'
+    
+    var imagegap=""
+    
+    var slideshowgap=3
+    
+    var copyspeed=slidespeed
+    
+    leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>'
+    
+    var iedom=document.all||document.getElementById
+    
+    if (iedom)
+    
+    document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">'+leftrightslide+'</span>')
+    
+    var actualwidth=''
+    
+    var cross_slide, ns_slide
+    
+    function fillup(){
+    
+    if (iedom){
+    
+    cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2
+    
+    cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3
+    
+    cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide
+    
+    actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth
+    
+    cross_slide2.style.left=actualwidth+slideshowgap+"px"
+    
+    }
+    
+    else if (document.layers){
+    
+    ns_slide=document.ns_slidemenu.document.ns_slidemenu2
+    
+    ns_slide2=document.ns_slidemenu.document.ns_slidemenu3
+    
+    ns_slide.document.write(leftrightslide)
+    
+    ns_slide.document.close()
+    
+    actualwidth=ns_slide.document.width
+    
+    ns_slide2.left=actualwidth+slideshowgap
+    
+    ns_slide2.document.write(leftrightslide)
+    
+    ns_slide2.document.close()
+    
+    }
+    
+    lefttime=setInterval("slideleft()",30)
+    
+    }
+    
+    window.onload=fillup
+    
+    
+    
+    function slideleft(){
+    
+    if (iedom){
+    
+    if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8))
+    
+    cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px"
+    
+    else
+    
+    cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px"
+    
+    
+    
+    if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8))
+    
+    cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px"
+    
+    else
+    
+    cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px"
+    
+    
+    }
+    
+    else if (document.layers){
+    
+    if (ns_slide.left>(actualwidth*(-1)+8))
+    
+    ns_slide.left-=copyspeed
+    
+    else
+    
+    ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+    
+    if (ns_slide2.left>(actualwidth*(-1)+8))
+    
+    ns_slide2.left-=copyspeed
+    
+    else
+    
+    ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+    
+    }
+    
+    }
+    
+    
+    if (iedom||document.layers){
+    
+    with (document){
+    
+    document.write('<table border="0" cellspacing="0" cellpadding="0"><td>')
+    
+    if (iedom){
+    
+    write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">')
+    
+    write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed">')
+    
+    write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>')
+    
+    write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>')
+    
+    write('</div></div>')
+    
+    }
+    
+    else if (document.layers){
+    
+    write('<ilayer width="+sliderwidth+" height="+sliderheight+" name="ns_slidemenu" bgcolor="+slidebgcolor+">')
+    
+    write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu2"></layer>')
+    
+    write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu3"></layer>')
+    
+    write('</ilayer>')
+    
+    }
+    
+    document.write('</td></table>')
+    
+    }
+    
+    }
+    
+    </script> 
+    <!-- script para mostrar las capturas -->
+    
+				</td></table>
+			</td>
+            
+		<td align=center ><table border=0 height="200" width="170"  cellpadding="25" ><td> </td></table></td>
+        
+        <!-- Cuadro vacio -->
+        
+			<td align=center> 
+				 <table border=0 height="250" width="200" bgcolor="white" cellpadding="25" ><td> 
+			<p align="center">
+					<img src="image/admx.png" align="center" alt="logo" width="125" heighit="150" hspace="10" vspace="0"> 
+					<font face="Tw Cen MT" color="DimGray" size="4"> <br> <br> <u> ADMX_2.2.0-Beta</u> <br> <br> </font>
+					<a href="descargar.html"> <img src="image/descargar.png" alt="Descargar" width="100" height="50" />  </a>
+			</p>
+				</td></table>
+                
+                <!-- Tabla de descagar -->
+                
+		 	</td>
+			
+		</table>
+        
+        <!-- Tabla central -->
+
+	</div>
+
+
+</body>
+</html>
